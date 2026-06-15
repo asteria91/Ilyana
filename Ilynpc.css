@@ -1,0 +1,294 @@
+.Ilyananpc {
+  background-blend-mode: darken;
+  background-image: url(https://images2.imgbox.com/48/d6/PSdxq74y_o.png);
+  background-size: 110%;
+  background-position: 325px -40px;
+  background-repeat: no-repeat;
+  padding: 15px;
+  width: 729px;
+}
+.Ttlily {
+  display: flex;
+  align-items: center;
+  color: #d7a0a0;
+  gap: 20px;
+}
+.Ilyname {
+  font-family: Galins;
+  white-space: nowrap;
+  font-size: 40px;
+}
+.ilyine {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #d7a0a0;
+}
+#npcilyicon {
+  font-size: 30px;
+}
+.x7b_tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 1px;
+  border-bottom: 2px solid #da9292;
+  margin-bottom: 5px;
+  padding-left: 0.5rem;
+  position: relative;
+}
+.x7b_tab-radio {
+  display: none;
+}
+.x7b_tab-label {
+  background: rgba(0, 0, 0, 0.05);
+  color: #d7a0a0;
+  padding: 0.7rem 1.8rem;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Georgia", "Times New Roman", serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  user-select: none;
+}
+.x7b_tab-label:hover {
+  background: linear-gradient(to right, #1e1e2f, #d7a0a0);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.x7b_tab-contents-wrapper {
+  position: relative;
+}
+.x7b_tab-contents-wrapper br {
+  display: none;
+} /* Cada contenido es un DIV independiente */
+.x7b_tab-content {
+  display: none;
+  animation: x7b_fadePage 0.25s ease;
+}
+#x7b_tab1:checked ~ .x7b_tab-contents-wrapper #x7b_content1,
+#x7b_tab2:checked ~ .x7b_tab-contents-wrapper #x7b_content2,
+#x7b_tab3:checked ~ .x7b_tab-contents-wrapper #x7b_content3,
+#x7b_tab4:checked ~ .x7b_tab-contents-wrapper #x7b_content4,
+#x7b_tab5:checked ~ .x7b_tab-contents-wrapper #x7b_content5,
+#x7b_tab6:checked ~ .x7b_tab-contents-wrapper #x7b_content6,
+#x7b_tab7:checked ~ .x7b_tab-contents-wrapper #x7b_content7,
+#x7b_tab8:checked ~ .x7b_tab-contents-wrapper #x7b_content8,
+#x7b_tab9:checked ~ .x7b_tab-contents-wrapper #x7b_content9,
+#x7b_tab10:checked ~ .x7b_tab-contents-wrapper #x7b_content10 {
+  display: block;
+} /*** Active tab ***/
+#x7b_tab1:checked ~ .x7b_tabs-container label[for="x7b_tab1"],
+#x7b_tab2:checked ~ .x7b_tabs-container label[for="x7b_tab2"],
+#x7b_tab3:checked ~ .x7b_tabs-container label[for="x7b_tab3"],
+#x7b_tab4:checked ~ .x7b_tabs-container label[for="x7b_tab4"],
+#x7b_tab5:checked ~ .x7b_tabs-container label[for="x7b_tab5"],
+#x7b_tab6:checked ~ .x7b_tabs-container label[for="x7b_tab6"],
+#x7b_tab7:checked ~ .x7b_tabs-container label[for="x7b_tab7"],
+#x7b_tab8:checked ~ .x7b_tabs-container label[for="x7b_tab8"],
+#x7b_tab9:checked ~ .x7b_tabs-container label[for="x7b_tab9"],
+#x7b_tab10:checked ~ .x7b_tabs-container label[for="x7b_tab10"] {
+  color: #ebdff7;
+  border-bottom: 2px solid #ff5959;
+  font-weight: 800;
+  position: relative;
+}
+@keyframes x7b_fadePage {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} /*** Internal card ***/
+.x7b_npc-page {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #d7a0a0;
+  box-shadow: inset 0 0 12px rgba(62, 30, 110, 0.04),
+    0 5px 12px rgba(0, 0, 0, 0.08);
+}
+.Ilnpcportrait {
+  flex: 1.2;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+.npcportr {
+  background: #5e4545;
+  padding: 0.6rem;
+  border-radius: 32px 20px 32px 20px;
+}
+.npcportr img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 24px 16px 24px 16px;
+  display: block;
+  object-fit: cover;
+  border: 2px solid #271b36;
+  background: #271b36;
+}
+.Inpcquote {
+  font-style: italic;
+  background: #b36d6d;
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
+  font-size: 12px;
+  line-height: 11px;
+  color: #fff;
+  text-align: center;
+}
+.x7b_npc-data {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.NPCIName {
+  padding: 10px;
+}
+.NPCIName br {
+  display: block;
+}
+.Ilnpcname {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Galins";
+  background: linear-gradient(135deg, #b38d8d, #edcccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-bottom: 2px dotted #ebc7c7;
+  display: inline-block;
+  margin: 10px;
+}
+.Ilstagrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 0.8rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 24px;
+  border: 1px solid #8b3939;
+}
+.Ilstagrid br {
+  display: none !important;
+}
+.ilystitem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem;
+  font-size: 13px;
+}
+.ilydlabel {
+  font-weight: bold;
+  color: #f2bbbb;
+  min-width: 95px;
+  font-family: monospace;
+  letter-spacing: 0.3px;
+}
+.Ilsttvalue {
+  color: #fff;
+}
+.ilbacksbox {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem 1.2rem;
+  border-radius: 20px;
+  border-left: 8px solid #c75e5e;
+  margin-top: 0.5rem;
+}
+.ilbacksbox br {
+  display: block;
+}
+.ilbacksbox h4 {
+  font-family: "Galins";
+  font-size: 25px;
+  color: #e4b6b6;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.backstorytxt {
+  line-height: 1.5;
+  color: #fff;
+  text-align: justify;
+}
+.Persontag1 {
+  display: inline-block;
+  background: linear-gradient(135deg, #7a2e2e, #b53a3a);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+.ily-badge {
+  background: linear-gradient(135deg, #7a2e2e, #b53a40);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: monospace;
+  line-height: 100%;
+}
+@media (max-width: 729px) {
+  .x7b_npc-page {
+    flex-direction: column;
+  }
+  .x7b_tabs-container {
+    justify-content: center;
+  }
+  .x7b_tab-label {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+  .Ilnpcname {
+    font-size: 1.6rem;
+  }
+}
+.npcfooter1 {
+  display: block;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-top: 1rem;
+  font-style: italic;
+}
+.npcfooter1 a {
+  color: #fff !important;
+  text-decoration: none;
+} /**FONTS**/
+@font-face {
+  font-family: "Vidaloka";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vidaloka/v18/7cHrv4c3ipenMKlEavs7wH8.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Galins";
+  src: url("https://cdn.jsdelivr.net/gh/asteria91/Ilyana@main/Galins.otf");
+  font-weight: bold;
+}
