@@ -1,0 +1,296 @@
+   .IlBsig * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .IlBsig {
+        width: 500px;
+        height: 250px;
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px;
+        background: #0b0910;
+        border: 1px solid rgba(201, 169, 110, 0.15);
+        transition: border-color 0.4s ease, box-shadow 0.4s ease;
+        font-family: 'Georgia', 'Times New Roman', serif;
+        cursor: default;
+    }
+
+.IlBsig:hover {
+        border-color: rgba(201, 169, 110, 0.40);
+    }
+
+.Ilbimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+        display: block;
+        transition: transform 0.6s ease;
+}
+
+    .IlBsig:hover .Ilbimg {transform: scale(1.04);}
+
+    .Yana-name {
+        position: absolute;
+        bottom: 12px;
+        left: 16px;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #f0e4d0, #c96e6e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
+        z-index: 15;
+        pointer-events: none;
+        font-family: 'Galins';
+        opacity: 0.85;
+        transition: opacity 0.4s ease;
+    }
+
+    .IlBsig:hover .Yana-name {
+        opacity: 1;
+    }
+
+    .Yoverl {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(11, 9, 16, 0.65);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 30px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: none;
+        z-index: 10;
+    }
+
+    .IlBsig:hover .Yoverl {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .Yoverl .quote {
+        font-size: 15px;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.90);
+        line-height: 100%;
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .Yoverl .law {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 14px;
+        color: rgba(201, 110, 110, 0.55);
+        letter-spacing: 3px;
+        text-transform: lowercase;
+        transition: color 0.4s ease;
+    }
+
+    .IlBsig:hover .Yoverl .law {
+        color: rgba(201, 110, 110, 0.75);
+    }
+
+    .Yoverl .law .scales {
+        font-size: 18px;
+        opacity: 0.6;
+        transition: transform 0.4s ease;
+    }
+
+    .IlBsig:hover .Yoverl .law .scales {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    .Yoverl .law .title {
+        font-style: italic;
+        letter-spacing: 4px;
+        font-size: 13px;
+        color: rgba(201, 110, 110, 0.50);
+    }
+
+    .IlBsig:hover .Yoverl .law .title {
+        color: rgba(201, 110, 110, 0.85);
+    }
+
+
+    .Yaudiotoggle {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: rgba(11, 9, 16, 0.50);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(201, 169, 110, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: width 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+            border-radius 0.4s ease,
+            background 0.4s ease,
+            border-color 0.4s ease,
+            box-shadow 0.4s ease;
+        z-index: 20;
+        cursor: pointer;
+        overflow: hidden;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+        padding-left: 0;
+    }
+
+    .Yaudiotoggle:hover {
+        width: 220px;
+        border-radius: 30px;
+        border-color: rgba(201, 169, 110, 0.30);
+        box-shadow: 0 2px 24px rgba(0, 0, 0, 0.7);
+    }
+
+    .Ynote {
+        font-size: 17px;
+        color: rgba(201, 169, 110, 0.75);
+        transition: opacity 0.35s ease, transform 0.35s ease, color 0.35s ease;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 1;
+        pointer-events: none;
+        text-shadow: 0 0 24px rgba(201, 169, 110, 0.15);
+    }
+
+    .Yaudiotoggle:hover .Ynote {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+        color: rgba(201, 169, 110, 0.90);
+    }
+    .Ycompactp {
+        height: 34px;
+        width: 220px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease 0.1s;
+        border: none;
+        outline: none;
+        display: block;
+        padding: 0 4px;
+        margin: 0;
+    }
+
+    .Yaudiotoggle:hover .Ycompactp {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .Ycompactp::-webkit-media-controls-panel {
+        border-radius: 30px;
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        min-height: 30px;
+      background:linear-gradient(135deg, #f0e4d0, #c96e6e);
+    }
+
+    .Ycompactp::-webkit-media-controls-play-button {
+        border: 1.5px solid rgba(201, 169, 110, 0.30);
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        padding: 1px;
+        margin: 0 2px 0 0;
+        transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+        -webkit-appearance: media-play-button;
+        appearance: media-play-button;
+  
+    }
+
+    .Ycompactp::-webkit-media-controls-play-button:hover {
+        border-color: rgba(201, 169, 110, 0.70);
+        transform: scale(1.05);
+    }
+
+    .Ycompactp::-webkit-media-controls-timeline {
+display:none;
+    }
+
+    .Ycompactp::-webkit-media-controls-current-time-display,
+    .Ycompactp::-webkit-media-controls-time-remaining-display {color: rgba(60, 55, 50, 0.70);
+        font-size: 10px;
+        font-family: 'Georgia', 'Times New Roman', serif;
+        letter-spacing: 0.1px;
+        padding: 0 1px;
+        flex-shrink: 0;
+    }
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v57/TK3iWkUHHAIjg752FD8Ghe4.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v57/TK3iWkUHHAIjg752HT8Ghe4.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v57/TK3iWkUHHAIjg752Fj8Ghe4.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v57/TK3iWkUHHAIjg752Fz8Ghe4.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v57/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Vidaloka';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vidaloka/v19/7cHrv4c3ipenMKlEavs7wH8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  @font-face { font-family: 'Galins'; src: url("https://cdn.jsdelivr.net/gh/asteria91/Ilyana@main/Galins.otf"); font-weight: bold;}
